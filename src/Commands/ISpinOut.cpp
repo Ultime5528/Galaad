@@ -28,12 +28,12 @@ bool ISpinOut::IsFinished()
 // Called once after isFinished returns true
 void ISpinOut::End()
 {
-
+	Robot::intake->SpinStop();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ISpinOut::Interrupted()
 {
-
+	End();
 }

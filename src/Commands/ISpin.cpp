@@ -40,11 +40,11 @@ bool ISpin::IsFinished() {
 
 // Called once after isFinished returns true
 void ISpin::End() {
-
+	Robot::intake->SpinStop();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ISpin::Interrupted() {
-
+	End();
 }

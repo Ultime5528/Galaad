@@ -10,18 +10,18 @@ ISpinStop::ISpinStop()
 // Called just before this Command runs the first time
 void ISpinStop::Initialize()
 {
-
+	Robot::intake->SpinStop();
 }
 
 // Called repeatedly when this Command is scheduled to run
 void ISpinStop::Execute() {
-	Robot::intake->SpinStop();
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool ISpinStop::IsFinished()
 {
-	return false;
+	return true;
 }
 
 // Called once after isFinished returns true
