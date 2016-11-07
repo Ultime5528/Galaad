@@ -77,3 +77,15 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.cproject
+*.cproject~
+*.project
+*.project~
+*.xml
+*.xml~
+*.prefs
+*.prefs~
+*.properties
+*.properties~
+*.cpp~
+*.h~
