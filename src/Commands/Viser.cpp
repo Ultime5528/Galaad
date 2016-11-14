@@ -1,38 +1,38 @@
-#include "CLoad.h"
+#include "Viser.h"
 
-CLoad::CLoad()
+Viser::Viser()
 {
 	// Use Requires() here to declare subsystem dependencies
 	// eg. Requires(chassis);
 }
 
 // Called just before this Command runs the first time
-void CLoad::Initialize()
+void Viser::Initialize()
 {
 
 }
 
 // Called repeatedly when this Command is scheduled to run
-void CLoad::Execute()
+void Viser::Execute()
 {
-	Robot::shooter->Load();
+
 }
 
 // Make this return true when this Command no longer needs to run execute()
-bool CLoad::IsFinished()
+bool Viser::IsFinished()
 {
 	return false;
 }
 
 // Called once after isFinished returns true
-void CLoad::End()
+void Viser::End()
 {
-	Robot::shooter->StopConv();
+
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
-void CLoad::Interrupted()
+void Viser::Interrupted()
 {
-	void CLoad::End();
+
 }
