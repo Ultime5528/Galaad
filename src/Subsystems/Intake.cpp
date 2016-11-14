@@ -51,3 +51,12 @@ void Intake::SpinOut(){
 void Intake::SpinStop(){
 	spin->Set(0);
 }
+void Intake::SpinUp(){
+	monte->Set(1);
+}
+void Intake::SpinDown(){
+	monte->Set(-1);
+}
+void Intake::SpinLvStop(){
+	monte->Set(0);
+}

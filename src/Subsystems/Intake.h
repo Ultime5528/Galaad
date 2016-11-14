@@ -37,5 +37,8 @@ public:
 	void SpinIn();
 	void SpinOut();
 	void SpinStop();
+	void SpinUp();
+	void SpinDown();
+	void SpinLvStop();
 };
 #endif
