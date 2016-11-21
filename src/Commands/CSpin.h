@@ -3,7 +3,7 @@
 
 #include "../CommandBase.h"
 #include "WPILib.h"
-
+#include "../Robot.h"
 class CSpin: public CommandBase
 {
 public:

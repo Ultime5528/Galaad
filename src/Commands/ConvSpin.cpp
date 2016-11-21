@@ -1,7 +1,9 @@
 #include "ConvSpin.h"
 
+
 ConvSpin::ConvSpin()
 {
+	Requires(Robot::shooter.get());
 	// Use Requires() here to declare subsystem dependencies
 	// eg. Requires(chassis);
 }
@@ -34,5 +36,5 @@ void ConvSpin::End()
 // subsystems is scheduled to run
 void ConvSpin::Interrupted()
 {
-	void ConvSpin::End();
+	End();
 }

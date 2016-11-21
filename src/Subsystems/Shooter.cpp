@@ -51,15 +51,6 @@ void Shooter::ConvOut() {
 }
 
 
-void Shooter::Load() {
-
-	if (limitSwitch->Get()) {
-		convoyeur->Set(0);
-	}
-	else {
-		Robot::shooter->ConvIn();
-	}
-}
 
 void Shooter::Shoot() {
 
@@ -73,6 +64,10 @@ void Shooter::StopShoot() {
 
 void Shooter::StopConv() {
 	convoyeur->Set(0);
+}
+
+void Shooter::Loaded() {
+	limitSwitch->Get();
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.

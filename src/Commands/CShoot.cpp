@@ -1,4 +1,7 @@
 #include "CShoot.h"
+#include "CSpin.h"
+#include "ConvSpin.h"
+
 
 CShoot::CShoot()
 {

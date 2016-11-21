@@ -3,6 +3,8 @@
 
 #include "../CommandBase.h"
 #include "WPILib.h"
+#include "../Robot.h"
+#include "../RobotMap.h"
 
 class CLoad: public CommandBase
 {
