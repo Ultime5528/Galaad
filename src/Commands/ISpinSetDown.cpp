@@ -15,7 +15,7 @@ void ISpinSetDown::Initialize()
 // Called repeatedly when this Command is scheduled to run
 void ISpinSetDown::Execute()
 {
-	Robot::intake->SpinUp();
+	Robot::intake->SpinDown();
 }
 
 // Make this return true when this Command no longer needs to run execute()

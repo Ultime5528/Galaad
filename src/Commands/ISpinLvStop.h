@@ -1,7 +1,7 @@
 #ifndef ISPINLVSTOP_H
 #define ISPINLVSTOP_H
 
-#include "Commands/Subsystem.h"
+#include "Robot.h"
 #include "WPILib.h"
 
 class ISpinLvStop: public Command

@@ -1,7 +1,7 @@
 #ifndef ISPINSETUP_H
 #define ISPINSETUP_H
 
-#include "Commands/Subsystem.h"
+#include "Robot.h"
 #include "WPILib.h"
 
 class ISpinSetUp: public Command

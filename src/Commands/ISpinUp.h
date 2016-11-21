@@ -1,7 +1,7 @@
 #ifndef ISPINUP_H
 #define ISPINUP_H
 
-#include "Commands/Subsystem.h"
+#include "Robot.h"
 #include "WPILib.h"
 
 class ISpinUp: public Command

@@ -1,7 +1,7 @@
 #ifndef ISPINDOWN_H
 #define ISPINDOWN_H
 
-#include "Commands/Subsystem.h"
+#include "Robot.h"
 #include "WPILib.h"
 
 class ISpinDown: public Command
