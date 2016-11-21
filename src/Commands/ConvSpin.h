@@ -1,5 +1,5 @@
-#ifndef ConvSpin_H
-#define ConvSpin_H
+#ifndef ConvSPIN_H
+#define ConvSPIN_H
 
 #include "../CommandBase.h"
 #include "WPILib.h"
