@@ -24,7 +24,7 @@ EMaintien::EMaintien(): Command() {
 
 // Called just before this Command runs the first time
 void EMaintien::Initialize() {
-
+	Robot::elevateur->Maintien();
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -39,11 +39,11 @@ bool EMaintien::IsFinished() {
 
 // Called once after isFinished returns true
 void EMaintien::End() {
-
+	Robot::elevateur->Stop();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void EMaintien::Interrupted() {
-
+	End();
 }
