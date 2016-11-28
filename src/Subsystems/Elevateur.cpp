@@ -40,4 +40,15 @@ void Elevateur::InitDefaultCommand() {
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-
+void Elevateur::Lever(){
+	monteur->Set(0.4);
+}
+void Elevateur::Maintien(){
+	monteur->Set(0.06);
+}
+void Elevateur::Dessendre(){
+	monteur->Set(-0.4);
+}
+void Elevateur::Stop(){
+	monteur->Set(0);
+}

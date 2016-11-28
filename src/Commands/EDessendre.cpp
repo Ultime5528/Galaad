@@ -30,7 +30,7 @@ void EDessendre::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void EDessendre::Execute() {
-
+	Robot::elevateur->Dessendre();
 }
 
 // Make this return true when this Command no longer needs to run execute()
@@ -40,11 +40,11 @@ bool EDessendre::IsFinished() {
 
 // Called once after isFinished returns true
 void EDessendre::End() {
-
+	Robot::elevateur->Stop();
 }
 
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void EDessendre::Interrupted() {
-
+	End();
 }

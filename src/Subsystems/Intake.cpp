@@ -43,19 +43,19 @@ void Intake::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 void Intake::SpinIn(){
-	spin->Set(1);
+	spin->Set(0.75);
 }
 void Intake::SpinOut(){
-	spin->Set(-1);
+	spin->Set(-0.75);
 }
 void Intake::SpinStop(){
 	spin->Set(0);
 }
 void Intake::SpinUp(){
-	monte->Set(1);
+	monte->Set(0.75);
 }
 void Intake::SpinDown(){
-	monte->Set(-1);
+	monte->Set(-0.75);
 }
 void Intake::SpinLvStop(){
 	monte->Set(0);

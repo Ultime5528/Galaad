@@ -9,7 +9,7 @@ ISpinSetDown::ISpinSetDown()
 // Called just before this Command runs the first time
 void ISpinSetDown::Initialize()
 {
-	SetTimeout(1.5);
+	SetTimeout(2);
 }
 
 // Called repeatedly when this Command is scheduled to run
