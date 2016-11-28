@@ -41,20 +41,20 @@ void Shooter::InitDefaultCommand() {
 
 void Shooter::ConvIn() {
 
-convoyeur->Set(-0.5);
+convoyeur->Set(0.2);
 
     }
 
 void Shooter::ConvOut() {
 
-	convoyeur->Set(1);
+	convoyeur->Set(-1);
 }
 
 
 
 void Shooter::Shoot() {
 
-	pitcheur->Set(1);
+	pitcheur->Set(-1);
 }
 
 void Shooter::StopShoot() {
@@ -66,8 +66,8 @@ void Shooter::StopConv() {
 	convoyeur->Set(0);
 }
 
-void Shooter::Loaded() {
-	limitSwitch->Get();
+bool Shooter::Loaded() {
+	return !limitSwitch->Get();
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.

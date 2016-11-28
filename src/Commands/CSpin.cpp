@@ -34,5 +34,5 @@ void CSpin::End()
 // subsystems is scheduled to run
 void CSpin::Interrupted()
 {
-	void CSpin::End();
+	return CSpin::End();
 }
