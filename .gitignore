@@ -90,3 +90,5 @@ $RECYCLE.BIN/
 *.cpp~
 *.h~
 /Debug/
+Debug/FRCUserProgram
+Debug/FRCUserProgram

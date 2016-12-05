@@ -40,7 +40,7 @@ bool ELever::IsFinished() {
 
 // Called once after isFinished returns true
 void ELever::End() {
-	Robot::elevateur->Dessendre();
+	Robot::elevateur->Maintien();
 }
 
 // Called when another command which requires one or more of the same

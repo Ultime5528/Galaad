@@ -44,7 +44,7 @@ void Elevateur::Lever(){
 	monteur->Set(0.4);
 }
 void Elevateur::Maintien(){
-	monteur->Set(0.1);
+	monteur->Set(0.2);
 }
 void Elevateur::Dessendre(){
 	monteur->Set(-0.4);
