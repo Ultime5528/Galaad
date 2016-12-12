@@ -41,7 +41,7 @@ OI::OI() {
     bouton2.reset(new JoystickButton(stick.get(), 2));
     bouton2->WhileHeld(new EDessendre());
     bouton1.reset(new JoystickButton(stick.get(), 1));
-    bouton1->WhileHeld(new ELever());
+    bouton1->WhileHeld(new ELever());=-
     bouton3.reset(new JoystickButton(stick.get(), 3));
     bouton3->WhileHeld(new EMaintien());
     bouton4.reset(new JoystickButton(stick.get(), 4));
